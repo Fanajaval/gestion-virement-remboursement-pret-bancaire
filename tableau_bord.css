@@ -28,6 +28,7 @@ header {
     padding: 15px 5%;
     background-color: #004080;
     color: #fff;
+    position: relative;
 }
 
 .logo {
@@ -37,6 +38,37 @@ header {
 
 .logo span {
     color: #ffcc00;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 5px;
+    z-index: 1000;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
 }
 
 nav ul {
@@ -278,31 +310,51 @@ input[type="date"]:focus, select:focus {
 /* Smartphones et tablettes portrait*/
 @media screen and (max-width: 768px) {
     header {
-        flex-direction: column;
-        padding: 10px;
-        gap: 15px;
+        flex-direction: row;
+        padding: 10px 5%;
+        gap: 0;
     }
 
     .logo {
         font-size: 20px;
     }
 
+    .hamburger {
+        display: flex;
+    }
+
     nav ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #004080;
         flex-direction: column;
-        gap: 8px;
+        gap: 0;
         width: 100%;
+        padding: 0;
+        margin: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        z-index: 999;
+    }
+
+    nav ul.active {
+        max-height: 500px;
     }
 
     nav ul li {
         width: 100%;
         text-align: center;
         margin: 0;
+        border-top: 1px solid rgba(255,255,255,0.1);
     }
 
     nav ul li a {
         display: block;
         width: 100%;
-        padding: 10px;
+        padding: 15px;
     }
 
     .container {

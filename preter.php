@@ -206,7 +206,7 @@ $result = $conn->query("SELECT * FROM preter ORDER BY datepret ASC");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion des Prêts</title>
-    <link rel="stylesheet" href="preter.css?v=2">
+    <link rel="stylesheet" href="preter.css?v=3">
     <style>
         .alert {
             position: fixed;
@@ -228,8 +228,13 @@ $result = $conn->query("SELECT * FROM preter ORDER BY datepret ASC");
 <body>
     <header>
         <div class="logo">Bank<span>Online</span></div>
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <nav>   
-            <ul class="menu">
+            <ul class="menu" id="menu">
                 <li class="id"><a href="head.php">Accueil</a></li>
                 <li class="id"><a href="client_banq.php">Clients</a></li>
                 <li class="id"><a href="virement.php">Virements</a></li>
@@ -240,6 +245,12 @@ $result = $conn->query("SELECT * FROM preter ORDER BY datepret ASC");
             </ul>
         </nav>
     </header>
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.getElementById('menu').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
 
     <section class="container">
         <h1>Gestion des Prêts</h1>

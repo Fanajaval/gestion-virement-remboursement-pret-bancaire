@@ -12,13 +12,18 @@ if (!isset($_SESSION['utilisateur'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rapports</title>
-    <link rel="stylesheet" href="rapport.css?v=2">
+    <link rel="stylesheet" href="rapport.css?v=3">
 </head>
 <body>
     <header>
         <div class="logo">Bank<span>Online</span></div>
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <nav>   
-            <ul class="menu">
+            <ul class="menu" id="menu">
                 <li class="id"><a href="head.php">Accueil</a></li>
                 <li class="id"><a href="client_banq.php">Clients</a></li>
                 <li class="id"><a href="virement.php">Virements</a></li>
@@ -29,6 +34,12 @@ if (!isset($_SESSION['utilisateur'])) {
             </ul>
         </nav>
     </header>
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.getElementById('menu').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
 
     <section class="rapport-container">
         <h1>Rapports des Transactions</h1>
