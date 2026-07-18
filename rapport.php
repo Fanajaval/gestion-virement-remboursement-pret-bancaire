@@ -12,7 +12,7 @@ if (!isset($_SESSION['utilisateur'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rapports</title>
-    <link rel="stylesheet" href="rapport.css?v=3">
+    <link rel="stylesheet" href="rapport.css?v=4">
 </head>
 <body>
     <header>

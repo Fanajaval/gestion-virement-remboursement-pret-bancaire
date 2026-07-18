@@ -84,7 +84,7 @@ if (isset($_GET['supprimer'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="client.css?v=3">
+    <link rel="stylesheet" href="client.css?v=4">
     <title>Gestion des Clients - BankOnline</title>
     <style>
         .alert {

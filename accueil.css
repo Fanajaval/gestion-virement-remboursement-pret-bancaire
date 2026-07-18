@@ -22,6 +22,7 @@ header {
     background-color: #004080;
     color: #fff;
     position: relative;
+    z-index: 1001;
 }
 
 .logo {
@@ -39,12 +40,13 @@ header {
     cursor: pointer;
     background: transparent;
     border: none;
-    padding: 5px;
-    z-index: 1000;
+    padding: 10px;
+    z-index: 1002;
+    margin-left: auto;
 }
 
 .hamburger span {
-    width: 25px;
+    width: 28px;
     height: 3px;
     background: white;
     margin: 3px 0;
@@ -64,7 +66,7 @@ header {
     transform: rotate(-45deg) translate(7px, -7px);
 }
 
-nav ul {
+nav ul, nav ul.menu {
     list-style: none;
     display: flex;
     align-items: center;
@@ -276,13 +278,15 @@ footer {
 
     .logo {
         font-size: 20px;
+        margin-right: auto;
     }
 
     .hamburger {
         display: flex;
     }
 
-    nav ul {
+    nav ul,
+    nav ul.menu {
         position: absolute;
         top: 100%;
         left: 0;
@@ -299,18 +303,21 @@ footer {
         z-index: 999;
     }
 
-    nav ul.active {
-        max-height: 500px;
+    nav ul.active,
+    nav ul.menu.active {
+        max-height: 600px;
     }
 
-    nav ul li {
+    nav ul li,
+    nav ul.menu li {
         width: 100%;
         text-align: center;
         margin: 0;
         border-top: 1px solid rgba(255,255,255,0.1);
     }
 
-    nav ul li a {
+    nav ul li a,
+    nav ul.menu li a {
         display: block;
         width: 100%;
         padding: 15px;

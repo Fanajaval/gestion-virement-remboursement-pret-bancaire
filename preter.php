@@ -206,7 +206,7 @@ $result = $conn->query("SELECT * FROM preter ORDER BY datepret ASC");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion des Prêts</title>
-    <link rel="stylesheet" href="preter.css?v=3">
+    <link rel="stylesheet" href="preter.css?v=4">
     <style>
         .alert {
             position: fixed;

@@ -160,7 +160,7 @@ $result = $conn->query("SELECT * FROM rendre ORDER BY date_rendu ASC");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion des Remboursements</title>
-    <link rel="stylesheet" href="rendre.css?v=3">
+    <link rel="stylesheet" href="rendre.css?v=4">
     <style>
         .alert {
             position: fixed;

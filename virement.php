@@ -113,7 +113,7 @@ $result = $conn->query("SELECT*FROM virement order by dateTransfert asc");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion des Virements</title>
-    <link rel="stylesheet" href="virement.css?v=3">
+    <link rel="stylesheet" href="virement.css?v=4">
     <style>
         .alert {
             position: fixed;
