@@ -1,12 +1,10 @@
 -- ============================================
--- Script de création de la base de données
+-- Script de création des tables (à importer dans une base déjà créée)
 -- Projet : Gestion de virements et prêts bancaires
 -- Version : PRODUCTION (sans données de test)
 -- ============================================
 
--- Créer la base de données
-CREATE DATABASE IF NOT EXISTS virement_pret_bancaire CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE virement_pret_bancaire;
+-- La base est créée par l'hébergeur (ou sélectionnée dans phpMyAdmin).
 
 -- ============================================
 -- Table : utilisateur

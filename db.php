@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "virement_pret_bancaire";
+$host = "sql304.infinityfree.com";
+$user = "if0_42438965";
+$password = "Evon2004Banks";
+$dbname = "if0_42438965_bankonline";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
