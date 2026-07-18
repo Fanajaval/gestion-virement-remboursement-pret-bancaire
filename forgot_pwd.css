@@ -98,41 +98,104 @@ h2 {
     background-color: #e44d35;
 }
 
-@media only screen and (max-width: 480px) {
+.container {
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* ========== RESPONSIVE DESIGN AMÉLIORÉ ========== */
+
+/* Tablettes (max 1024px) */
+@media only screen and (max-width: 1024px) {
     .container {
-        padding: 30px;
+        max-width: 420px;
+    }
+}
+
+/* Tablettes portrait et smartphones (max 768px) */
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 85%;
+        padding: 35px 25px;
+    }
+
+    h2 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    .input-group input {
+        padding: 13px;
+        font-size: 15px;
+    }
+
+    .button {
+        padding: 13px;
+        font-size: 15px;
+    }
+}
+
+/* Smartphones (max 480px) */
+@media only screen and (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        max-width: 95%;
+        padding: 30px 20px;
     }
 
     h2 {
         font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .input-group {
+        margin-bottom: 15px;
+    }
+
+    .input-group input {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .input-group label {
+        font-size: 14px;
+    }
+
+    .button {
+        padding: 12px;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    .message,
+    .error-message {
+        font-size: 13px;
     }
 }
 
-.message {
-    text-align: center;
-    font-size: 14px;
-    font-weight: bold;
-    color: #4CAF50;
-}
-
-.error-message {
-    text-align: center;
-    font-size: 14px;
-    font-weight: bold;
-    color: red;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
+/* Très petits smartphones (max 360px) */
+@media only screen and (max-width: 360px) {
+    .container {
+        padding: 25px 15px;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
-.container {
-    animation: fadeIn 0.8s ease-out;
+    h2 {
+        font-size: 22px;
+    }
+
+    .input-group input {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .button {
+        padding: 10px;
+        font-size: 13px;
+    }
 }

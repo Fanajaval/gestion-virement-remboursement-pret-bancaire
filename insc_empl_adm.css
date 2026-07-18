@@ -94,3 +94,161 @@ body {
 .return a:hover {
     text-decoration: underline;
 }
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablettes (max 1024px) */
+@media only screen and (max-width: 1024px) {
+    .container {
+        max-width: 420px;
+        padding: 35px;
+    }
+}
+
+/* Tablettes portrait et smartphones larges (max 768px) */
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 90%;
+        padding: 30px 25px;
+    }
+
+    .form-box h2 {
+        font-size: 1.5em;
+    }
+
+    .input-box label {
+        font-size: 13px;
+    }
+
+    .input-box input {
+        padding: 9px;
+        font-size: 15px;
+    }
+
+    .btn {
+        padding: 11px 18px;
+        font-size: 15px;
+    }
+}
+
+/* Smartphones (max 500px) */
+@media only screen and (max-width: 500px) {
+    body {
+        padding: 15px;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .container {
+        max-width: 95%;
+        padding: 25px 20px;
+    }
+
+    .form-box {
+        width: 100%;
+    }
+
+    .form-box h2 {
+        font-size: 1.3em;
+        margin-bottom: 12px;
+    }
+
+    .input-box {
+        margin-bottom: 12px;
+    }
+
+    .input-box label {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+
+    .input-box input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .return {
+        margin-top: 10px;
+    }
+
+    .return a {
+        font-size: 13px;
+    }
+}
+
+/* Très petits smartphones (max 360px) */
+@media only screen and (max-width: 360px) {
+    .container {
+        max-width: 98%;
+        padding: 20px 15px;
+    }
+
+    .form-box h2 {
+        font-size: 1.2em;
+    }
+
+    .input-box label {
+        font-size: 11px;
+    }
+
+    .input-box input {
+        padding: 7px;
+        font-size: 13px;
+    }
+
+    .btn {
+        padding: 9px;
+        font-size: 13px;
+    }
+
+    .return a {
+        font-size: 12px;
+    }
+}
+
+/* Orientation paysage pour smartphones */
+@media only screen and (max-height: 600px) and (orientation: landscape) {
+    body {
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .container {
+        max-width: 500px;
+        padding: 20px 30px;
+        margin: 20px 0;
+    }
+
+    .form-box h2 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .input-box {
+        margin-bottom: 10px;
+    }
+
+    .input-box label {
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+
+    .input-box input {
+        padding: 7px;
+        font-size: 13px;
+    }
+
+    .btn {
+        padding: 8px;
+        font-size: 13px;
+    }
+}

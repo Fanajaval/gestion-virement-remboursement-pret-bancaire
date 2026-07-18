@@ -47,3 +47,83 @@ button:hover {
     color: green;
     font-size: 14px;
 }
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablettes (max 768px) */
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        width: 85%;
+        padding: 25px;
+    }
+
+    input {
+        width: 92%;
+        padding: 9px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 9px;
+        font-size: 14px;
+    }
+}
+
+/* Smartphones (max 480px) */
+@media only screen and (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        width: 95%;
+        padding: 20px 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    input {
+        width: 95%;
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .error,
+    .success {
+        font-size: 13px;
+    }
+}
+
+/* Très petits smartphones (max 360px) */
+@media only screen and (max-width: 360px) {
+    .container {
+        width: 98%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    input {
+        padding: 7px;
+        font-size: 12px;
+    }
+
+    button {
+        padding: 7px;
+        font-size: 12px;
+    }
+}

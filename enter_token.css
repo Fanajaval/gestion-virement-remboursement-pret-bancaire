@@ -131,3 +131,96 @@ h2 {
         font-size: 24px;
     }
 }
+
+/* ========== RESPONSIVE DESIGN AMÉLIORÉ ========== */
+
+/* Tablettes (max 1024px) */
+@media only screen and (max-width: 1024px) {
+    .container {
+        max-width: 420px;
+    }
+}
+
+/* Tablettes portrait (max 768px) */
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 85%;
+        padding: 35px 25px;
+    }
+
+    h2 {
+        font-size: 26px;
+        margin-bottom: 18px;
+    }
+
+    .input-group input {
+        padding: 13px;
+        font-size: 15px;
+    }
+
+    .button {
+        padding: 13px;
+        font-size: 15px;
+    }
+}
+
+/* Smartphones (max 480px - Override précédent) */
+@media only screen and (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        max-width: 95%;
+        padding: 30px 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .input-group {
+        margin-bottom: 15px;
+    }
+
+    .input-group input {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .button {
+        padding: 12px;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    .error-message {
+        font-size: 13px;
+    }
+}
+
+/* Très petits smartphones (max 360px) */
+@media only screen and (max-width: 360px) {
+    .container {
+        padding: 25px 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .input-group input {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .button {
+        padding: 10px;
+        font-size: 13px;
+    }
+}

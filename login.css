@@ -129,8 +129,155 @@ a:hover {
     100% { opacity: 0; display: none; }
 }
 
-@media only screen and (max-width: 500px) {
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablettes (max 1024px) */
+@media only screen and (max-width: 1024px) {
     .head {
-        width: 90%;
+        width: 450px;
+        padding: 45px 25px;
+    }
+}
+
+/* Tablettes portrait et smartphones larges (max 768px) */
+@media only screen and (max-width: 768px) {
+    .head {
+        width: 85%;
+        padding: 40px 25px;
+    }
+
+    .login {
+        font-size: 22px;
+        padding: 8px;
+    }
+
+    .input1 {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .label {
+        font-size: 13px;
+    }
+
+    .input-submit {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .password {
+        font-size: 14px;
+    }
+
+    .inscription {
+        font-size: 14px;
+    }
+}
+
+/* Smartphones (max 500px) */
+@media only screen and (max-width: 500px) {
+    .debut {
+        padding: 15px;
+    }
+
+    .head {
+        width: 95%;
+        padding: 35px 20px;
+    }
+
+    .login {
+        font-size: 20px;
+        padding: 8px;
+        margin-bottom: 15px;
+    }
+
+    .input {
+        margin: 12px 0;
+    }
+
+    .input1 {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .label {
+        font-size: 12px;
+        top: -8px;
+        padding: 2px 6px;
+    }
+
+    .input-submit {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .password {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    .inscription {
+        font-size: 13px;
+    }
+
+    .flash-message {
+        font-size: 13px;
+        padding: 8px;
+    }
+}
+
+/* Très petits smartphones (max 360px) */
+@media only screen and (max-width: 360px) {
+    .head {
+        width: 98%;
+        padding: 30px 15px;
+    }
+
+    .login {
+        font-size: 18px;
+        padding: 6px;
+    }
+
+    .input1 {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .label {
+        font-size: 11px;
+    }
+
+    .input-submit {
+        padding: 9px;
+        font-size: 13px;
+    }
+
+    .password,
+    .inscription {
+        font-size: 12px;
+    }
+}
+
+/* Orientation paysage pour smartphones */
+@media only screen and (max-height: 500px) and (orientation: landscape) {
+    .debut {
+        padding: 10px;
+        min-height: auto;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+
+    .head {
+        width: 500px;
+        padding: 20px 25px;
+    }
+
+    .login {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .input {
+        margin: 8px 0;
     }
 }
