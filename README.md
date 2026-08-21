@@ -12,7 +12,6 @@
 
 - [À propos](#-à-propos)
 - [Fonctionnalités](#-fonctionnalités)
-- [Captures d'écran](#-captures-décran)
 - [Installation](#-installation)
 - [Technologies](#-technologies)
 - [Structure du Projet](#-structure-du-projet)
@@ -82,18 +81,6 @@
 
 ---
 
-## 📸 Captures d'écran
-
-*Ajoutez vos captures d'écran ici*
-
-```
-screenshots/
-├── login.png
-├── dashboard.png
-├── clients.png
-├── loans.png
-└── reports.png
-```
 
 ---
 
