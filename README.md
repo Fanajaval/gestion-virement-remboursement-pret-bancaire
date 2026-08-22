@@ -331,6 +331,6 @@ Si vous rencontrez des problèmes :
 
 **⭐ Si ce projet vous a été utile, n'hésitez pas à lui donner une étoile ! ⭐**
 
-Made with ❤️ by [Votre Nom](https://github.com/votre-username)
+(https://github.com/votre-username)
 
 </div>
